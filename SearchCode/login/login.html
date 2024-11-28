@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login - SearchCode</title>
+  </head>
+  <body>
+    <form id="main">
+        <h2>Login - SearchCode</h2>
+        <input type="email" name="email" placeholder="Email" required autocomplete="username" />
+        <input type="password" name="password" placeholder="Senha" required autocomplete="current-password" />
+        <h3>Área de desenvolvimento</h3>
+        <div id="desenvolpment">
+          <label for="front-end">Front-end</label>
+          <input type="radio" name="dev" id="front-end" value="front-end" required />
+          <label for="back-end">Back-end</label>
+          <input type="radio" name="dev" id="back-end" value="back-end" required />
+          <label for="full">Full-stack</label>
+          <input type="radio" name="dev" id="full" value="full" required />
+        </div>
+        <button type="submit">Entrar</button>
+    </form>
+  </body>
+</html>

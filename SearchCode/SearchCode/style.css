@@ -1,0 +1,260 @@
+/* Importação de fontes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+/* Corpo */
+body {
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+  background: #2c3e50;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+header h1 a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+header h1 a:hover {
+  color: #ffffff;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #1abc9c;
+}
+
+header input#search {
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+header button#searchBtn {
+  padding: 8px 15px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.5s ease;
+  margin-right: 10px;
+}
+
+header button#searchBtn:hover {
+  background-color: #148d75;
+}
+
+#loginBtn {
+  padding: 8px 15px;
+  background-color: #138f0d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.5s ease;
+}
+
+#loginBtn:hover {
+  background-color: #0f640a;
+}
+
+.banner {
+  background: linear-gradient(120deg, #10d4ac, #0f7560);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  margin-top: 37px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.banner .btn {
+  background: #ffffff;
+  color: #16a085;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.banner .btn:hover {
+  background: #187d69;
+  color: white;
+}
+
+main {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main .title h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+main .title h3 {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.languages .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.languages .card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.languages .card p {
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.languages .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.languages .card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.languages .card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.contact {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.contact h3 {
+  font-size: 1.8rem;
+  color: #1abc9c;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #1abc9c;
+  outline: none;
+}
+
+.contact button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #16a085;
+}
+
+/* Rodapé */
+footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.highlight {
+  background-color: #ff0; 
+  border: 4px solid #ff0;
+  padding: 10px;
+}
+
